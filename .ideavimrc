@@ -116,16 +116,16 @@ nmap <leader>gf <Action>(Back)
 nmap <leader>gb <Action>(Forward)
 
 " Git windows
-map <leader>gc <Action>(CheckinProject)
-map <leader>gs <Action>(ActivateVersionControlToolWindow)
+map <leader>gp <Action>(CheckinProject)
+map <leader>gw <Action>(ActivateVersionControlToolWindow)
 map <leader>gb <Action>(Git.Branches)
 map <leader>lf <Action>(ReformatCode)
 "usar leader + rc para ejecutar el archivo actual Shift + Ctrl + F10"
 map <leader>rc <Action>(RunClass)
 "leader lh -> nextError"
-map <leader>lh <Action>(NextError)
+map <leader>lh <Action>(GotoNextError)
 "leader ll -> prevError"
-map <leader>lk <Action>(PrevError)
+map <leader>lk <Action>(GotoPreviousError)
 
 " mover un bloque con alt + flechas"
 
@@ -137,5 +137,11 @@ map <leader>np <Action>(NewProject)
 map <leader>gs <Action>(GenerateSetter)
 map <leader>gg <Action>(GenerateGetter)
 map <leader>ga <Action>(GenerateGetterAndSetter)
-mao <leader>om <Action>(OverrideMethods)
+map <leader>gc <Action>(GenerateConstructor)
+map <leader>om <Action>(OverrideMethods)
+map <leader>ss <Action>(GeneratetoString)
+"mostrar problemas relacionados (related problems)
+"show hide / input fields
+map <leader>sh <Action>(ShowIntentionActions)
+
 "  Find more examples here: https://jb.gg/share-ideavimrc
